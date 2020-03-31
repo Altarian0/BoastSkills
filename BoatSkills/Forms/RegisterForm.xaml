@@ -1,0 +1,28 @@
+﻿<Window x:Class="BoatSkills.Forms.RegisterForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BoatSkills.Forms"
+        mc:Ignorable="d"
+        Title="RegisterForm" Height="350" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Login"  Grid.Row="0" Grid.Column="0" TextWrapping="Wrap" />
+        <TextBox x:Name="LoginText" Text="{Binding Login}"  Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" />
+        <TextBlock Text="Password"  Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" />
+        <TextBox Name="PasswordText" Text="{Binding Password}" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" />
+        <TextBlock Text="Repeat password"  Grid.Row="2" Grid.Column="0" TextWrapping="Wrap" />
+        <TextBox Name="RepeatPasswordText"  Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" />
+        <Button Name="SaveButton" Grid.Row="3" Grid.Column="1" Content="Сохранить" Width="120" Height="40" Click="SaveButton_Click"/>
+    </Grid>
+</Window>
